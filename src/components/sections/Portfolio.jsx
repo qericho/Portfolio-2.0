@@ -10,7 +10,7 @@ const Portfolio = () => {
     <section id="portfolio" className="bg-gry py-20">
       <Title
         h1={h1}
-        h1Style={"text-dark"}
+        h1Style={"text-dark text-center"}
         h5={h5}
         p={p}
         imgStyle={"hidden"}

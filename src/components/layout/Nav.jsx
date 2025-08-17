@@ -22,7 +22,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 w-full px-5 md:px-30 lg:px-50 xl:px-60 z-50">
+    <nav className="fixed top-0 w-full px-0 md:px-30 lg:px-50 xl:px-60 z-50">
       <div className="w-[225px] h-[66px] bg-blck" ref={menuRef}>
         <div className="w-[80%] h-full px-10 flex items-center justify-between text-whte">
           <span

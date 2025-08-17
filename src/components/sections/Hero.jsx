@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import LargeBtn from "../ui/Buttons/LargeBtn";
 import { Link } from "react-scroll";
+import BackToTop from "../ui/Buttons/BackToTop";
 
 const Hero = () => {
   return (
@@ -59,6 +60,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      <BackToTop />
     </section>
   );
 };
