@@ -14,26 +14,43 @@ const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll to top smoothly
+  // Custom smooth scroll with easing
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    const start = window.scrollY;
+    const duration = 800;
+    const startTime = performance.now();
+
+    const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+    const step = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easedProgress = easeOutCubic(progress);
+
+      window.scrollTo(0, start * (1 - easedProgress));
+
+      if (elapsed < duration) {
+        requestAnimationFrame(step);
+      }
+    };
+
+    requestAnimationFrame(step);
   };
 
   return (
-    <>
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-0 right-0 bg-primary/80 hover:bg-blck text-white p-3  shadow-lg transition-transform transform cursor-pointer z-50"
-          aria-label="Scroll to top"
-        >
-          <TiArrowUp className=" w-8 h-8" />
-        </button>
-      )}
-    </>
+    <button
+      onClick={scrollToTop}
+      aria-label="Scroll to top"
+      className={`fixed bottom-5 right-5 bg-primary/80 hover:bg-blck text-white p-3 shadow-lg cursor-pointer z-50 transition-all duration-500 transform
+        ${
+          isVisible
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10 pointer-events-none"
+        }
+      `}
+    >
+      <TiArrowUp className="w-6 h-6" />
+    </button>
   );
 };
 

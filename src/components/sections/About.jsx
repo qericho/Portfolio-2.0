@@ -8,6 +8,7 @@ import {
   SiSupabase,
   SiGit,
   SiGithub,
+  SiVite,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import LargeBtn from "../ui/Buttons/LargeBtn";
@@ -25,8 +26,9 @@ const skills = [
   { icon: SiJavascript, class: "text-yellow-400 hover:text-yellow-300" },
   { icon: SiHtml5, class: "text-orange-600 hover:text-orange-500" },
   { icon: SiCss3, class: "text-blue-600 hover:text-blue-500" },
-  { icon: SiReact, class: "text-cyan-400 hover:text-cyan-300" },
   { icon: SiTailwindcss, class: "text-teal-400 hover:text-teal-300" },
+  { icon: SiVite, class: "text-purple-500 hover:text-purple-400" },
+  { icon: SiReact, class: "text-cyan-400 hover:text-cyan-300" },
   { icon: SiSupabase, class: "text-green-500 hover:text-green-400" },
   { icon: SiGit, class: "text-orange-500 hover:text-orange-400" },
   { icon: SiGithub, class: "text-gray-800 hover:text-gray-600" },

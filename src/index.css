@@ -29,3 +29,23 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #313131;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff0077;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0077;
+}
