@@ -71,7 +71,7 @@ const ProjectCard = () => {
               className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
             />
             {/* Overlay with Title & Description */}
-            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-4">
+            <div className="absolute inset-0 bg-black/80 translate-x-[-100%] group-hover:translate-x-0 transition-all duration-500 flex flex-col items-center justify-center text-center p-4">
               <h3 className="text-white font-bold text-lg mb-2">
                 {project.title}
               </h3>

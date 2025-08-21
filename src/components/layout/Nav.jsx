@@ -27,24 +27,23 @@ const Nav = () => {
           {/* Hamburger / X */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="relative w-6 h-5 flex flex-col justify-between items-center group focus:outline-none"
+            className="cursor-pointer relative w-6 h-6 flex flex-col justify-center items-center group focus:outline-none"
           >
-            {/* Bar 1 */}
             <span
-              className={`block h-[2px] w-full bg-primary rounded transition-all duration-400 transform origin-center ${
-                isOpen ? "rotate-45 translate-y-[7px] bg-pink-500" : ""
+              className={`absolute h-[2px] w-full bg-primary rounded transition-all duration-300 ease-in-out ${
+                isOpen ? "rotate-45 bg-pink-500" : "-translate-y-[6px]"
               }`}
             ></span>
-            {/* Bar 2 */}
+
             <span
-              className={`block h-[2px] w-full bg-primary rounded transition-all duration-400 ${
+              className={`absolute h-[2px] w-full bg-primary rounded transition-all duration-200 ease-in-out ${
                 isOpen ? "opacity-0" : "opacity-100"
               }`}
             ></span>
-            {/* Bar 3 */}
+
             <span
-              className={`block h-[2px] w-full bg-primary rounded transition-all duration-400 transform origin-center ${
-                isOpen ? "-rotate-45 -translate-y-[7px] bg-pink-500" : ""
+              className={`absolute h-[2px] w-full bg-primary rounded transition-all duration-300 ease-in-out ${
+                isOpen ? "-rotate-45 bg-pink-500" : "translate-y-[6px]"
               }`}
             ></span>
           </button>
