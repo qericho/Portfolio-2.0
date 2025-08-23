@@ -2,6 +2,14 @@ import { useState } from "react";
 
 const projects = [
   {
+    img: "/6.jpg",
+    title: "CineTambay",
+    desc: "Movie trailer app built with React and Tailwind.",
+    demo: "https://cine-tambay.vercel.app/",
+    source: "https://github.com/qericho/CineTambay",
+    tech: ["React", "Tailwind", "Vite"],
+  },
+  {
     img: "/1.jpg",
     title: "Limuel Landscaping",
     desc: "Landing page for a landscaping business.",
@@ -31,7 +39,7 @@ const projects = [
     desc: "Portfolio website design converted from Figma.",
     demo: "https://dezign-three.vercel.app/",
     source: "https://github.com/qericho/Dezign",
-    tech: ["React"],
+    tech: ["React", "Tailwind"],
   },
   {
     img: "/5.jpg",
@@ -56,9 +64,9 @@ const ProjectCard = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-6">
+    <div className="w-full max-w-7xl mx-auto p-6">
       {/* Project Grid */}
-      <div className="columns-1 md:columns-2 lg:columns-2 gap-4">
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
         {projects.map((project, i) => (
           <div
             key={i}

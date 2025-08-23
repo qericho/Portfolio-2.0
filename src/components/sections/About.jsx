@@ -13,9 +13,7 @@ import {
 import { VscVscode } from "react-icons/vsc";
 import LargeBtn from "../ui/Buttons/LargeBtn";
 import { Link } from "react-scroll";
-
-const imgUrl =
-  "https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/524004556_122097509762960368_2013916304261552981_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=eKHfjlQ_VNwQ7kNvwGJTikg&_nc_oc=AdmRKfeZvj7TEHwHCVgzX8_RqIduJUsbDZh_Yxqq362MF4HCI1pHpr09TJ_xKj4OqSRh_PwqsYUSQLYbw5ghvs6H&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=0HOkDuNtWPo6q3K5de7chw&oh=00_AfXQUwzY67ihazMOEmhv9CQ5M91MVgdr9cZxJcUzJb457Q&oe=68A748AD";
+import Profile from "/me.jpg";
 
 const h5 = "About";
 const h1 = "Let me introduce myself.";
@@ -39,7 +37,7 @@ const About = () => {
   return (
     <section id="about" className="bg-whte py-20">
       <Title
-        image={imgUrl}
+        image={Profile}
         h5={h5}
         h1={h1}
         h1Style={"text-dark"}
