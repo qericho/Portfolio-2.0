@@ -7,7 +7,7 @@ const p =
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="bg-gry py-20">
+    <section id="portfolio" className="bg-whte py-20">
       <Title
         h1={h1}
         h1Style={"text-dark text-center"}
@@ -15,7 +15,7 @@ const Portfolio = () => {
         p={p}
         imgStyle={"hidden"}
         pStyle={"text-center"}
-        divStyle={"md:mt-5"}
+        divStyle={"md:mb-5"}
       />
       <div>{<ProjectCard />}</div>
     </section>

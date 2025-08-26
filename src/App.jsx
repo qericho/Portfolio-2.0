@@ -5,6 +5,8 @@ import About from "./components/sections/About";
 import Hero from "./components/sections/Hero";
 import Portfolio from "./components/sections/Portfolio";
 import Loader from "./components/ui/Loader/Loader";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -25,7 +27,9 @@ const App = () => {
           <Nav />
           <Hero />
           <About />
+          <Services />
           <Portfolio />
+          <Contact />
           <Footer />
         </>
       )}

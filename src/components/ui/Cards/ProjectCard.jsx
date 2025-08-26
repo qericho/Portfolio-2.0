@@ -2,6 +2,22 @@ import { useState } from "react";
 
 const projects = [
   {
+    img: "/5.jpg",
+    title: "CS Design Studio",
+    desc: "Landing page for CS Design Studio.",
+    demo: "https://cs-design.vercel.app/",
+    source: "https://github.com/qericho/CS-Design",
+    tech: ["NextJs", "TypeScript", "Tailwind"],
+  },
+  {
+    img: "/7.jpg",
+    title: "Recent Portfolio",
+    desc: "My most recent personal portfolio site.",
+    demo: "https://echstmr-portfolio.vercel.app/",
+    source: "https://github.com/qericho/My-Portfolio",
+    tech: ["React", "Tailwind", "Vite"],
+  },
+  {
     img: "/6.jpg",
     title: "CineTambay",
     desc: "Movie trailer app built with React and Tailwind.",
@@ -18,14 +34,6 @@ const projects = [
     tech: ["React", "Tailwind", "Vite"],
   },
   {
-    img: "/2.jpg",
-    title: "Simple CRUD with Supabase",
-    desc: "Practice project demonstrating a CRUD app using Supabase.",
-    demo: "https://spbase-crud.vercel.app/login",
-    source: "https://github.com/qericho/spbase-crud",
-    tech: ["React", "Tailwind", "Supabase", "Vite"],
-  },
-  {
     img: "/3.jpg",
     title: "Upskela UI Clone",
     desc: "Clone of the Upskela website UI.",
@@ -34,19 +42,19 @@ const projects = [
     tech: ["React", "Tailwind"],
   },
   {
+    img: "/2.jpg",
+    title: "Simple CRUD with Supabase",
+    desc: "CRUD app using Supabase for practice.",
+    demo: "https://spbase-crud.vercel.app/login",
+    source: "https://github.com/qericho/spbase-crud",
+    tech: ["React", "Tailwind", "Supabase", "Vite"],
+  },
+  {
     img: "/4.jpg",
-    title: "Portfolio",
+    title: "Portfolio (Figma to Code)",
     desc: "Portfolio website design converted from Figma.",
     demo: "https://dezign-three.vercel.app/",
     source: "https://github.com/qericho/Dezign",
-    tech: ["React", "Tailwind"],
-  },
-  {
-    img: "/5.jpg",
-    title: "Netflix UI Clone",
-    desc: "Netflix user interface clone built with React and Tailwind.",
-    demo: "https://my-react-app-cyan-seven.vercel.app/",
-    source: "https://github.com/qericho/Nflix-Clone",
     tech: ["React", "Tailwind"],
   },
 ];
@@ -66,7 +74,7 @@ const ProjectCard = () => {
   return (
     <div className="w-full max-w-7xl mx-auto p-6">
       {/* Project Grid */}
-      <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
+      <div className="columns-1 md:columns-2 lg:columns-2 gap-4">
         {projects.map((project, i) => (
           <div
             key={i}

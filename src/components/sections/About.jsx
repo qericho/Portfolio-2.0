@@ -9,6 +9,8 @@ import {
   SiGit,
   SiGithub,
   SiVite,
+  SiNextdotjs,
+  SiTypescript,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import LargeBtn from "../ui/Buttons/LargeBtn";
@@ -21,12 +23,14 @@ const p =
   "I am passionate about front-end development, with skills in HTML, CSS, JavaScript, ReactJS, and TailwindCSS. I enjoy creating responsive, user-friendly websites";
 
 const skills = [
-  { icon: SiJavascript, class: "text-yellow-400 hover:text-yellow-300" },
   { icon: SiHtml5, class: "text-orange-600 hover:text-orange-500" },
   { icon: SiCss3, class: "text-blue-600 hover:text-blue-500" },
   { icon: SiTailwindcss, class: "text-teal-400 hover:text-teal-300" },
-  { icon: SiVite, class: "text-purple-500 hover:text-purple-400" },
+  { icon: SiJavascript, class: "text-yellow-400 hover:text-yellow-300" },
+  { icon: SiTypescript, class: "text-blue-600 hover:text-blue-500" },
   { icon: SiReact, class: "text-cyan-400 hover:text-cyan-300" },
+  { icon: SiNextdotjs, class: "text-black hover:text-gray-700" },
+  { icon: SiVite, class: "text-purple-500 hover:text-purple-400" },
   { icon: SiSupabase, class: "text-green-500 hover:text-green-400" },
   { icon: SiGit, class: "text-orange-500 hover:text-orange-400" },
   { icon: SiGithub, class: "text-gray-800 hover:text-gray-600" },
@@ -83,7 +87,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="p-2 grid grid-cols-4 place-items-start gap-4 pt-5">
+            <div className="p-2 grid grid-cols-4 place-items-center md:place-items-start gap-4 pt-5">
               {skills.map(({ icon: Icon, class: iconClass }, idx) => (
                 <Icon
                   key={idx}

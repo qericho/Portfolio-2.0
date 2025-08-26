@@ -5,7 +5,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
-  const menuItems = ["Home", "About", "Portfolio", "Contact"];
+  const menuItems = ["About", "Services", "Portfolio", "Contact"];
 
   // Close menu if click outside
   useEffect(() => {
@@ -48,13 +48,22 @@ const Nav = () => {
             ></span>
           </button>
 
-          <h1 className="text-xl font-sans font-bold">ECHO</h1>
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            offset={-66}
+            spy={true}
+            onClick={() => setIsOpen(false)}
+          >
+            <h1 className="text-xl font-sans font-bold cursor-pointer">ECHO</h1>
+          </Link>
         </div>
 
         {/* Dropdown */}
         <div
           className={`overflow-hidden transition-all duration-500 ${
-            isOpen ? "h-70" : "h-0"
+            isOpen ? "h-96" : "h-0"
           }`}
         >
           <ul className="flex flex-col gap-y-5 px-10 pt-3 pb-10 font-sans font-semibold text-whte bg-blck">
