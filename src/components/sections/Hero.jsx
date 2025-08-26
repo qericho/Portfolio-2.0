@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import LargeBtn from "../ui/Buttons/LargeBtn";
 import { Link } from "react-scroll";
 import BackToTop from "../ui/Buttons/BackToTop";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
@@ -24,9 +25,21 @@ const Hero = () => {
           I'm Echo Sta Maria
         </h1>
 
-        {/* Subtitle */}
+        {/* Subtitle with Typewriter */}
         <p className="text-sm md:text-lg text-white font-serif">
-          Aspiring Frontend Developer
+          <Typewriter
+            words={[
+              "Unemployed",
+              "Aspiring Frontend Developer",
+              "Looking for Opportunities",
+            ]}
+            loop={0}
+            cursor
+            cursorStyle="|"
+            typeSpeed={50}
+            deleteSpeed={30}
+            delaySpeed={1500}
+          />
         </p>
 
         {/* CTA Button */}
